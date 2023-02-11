@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="demo"></div>
+        <script>
+           const demo=document.getElementById('demo');
+             
+            const button=document.createElement('button');
+            button.innerText='Click me';
+            button.onclick=changeText;
+            demo.appendChild(button);
+            demo.style='text-align:center;';
+
+            function changeText(){
+                demo.innerHTML=' ';
+                demo.innerHTML='Hello Text';        
+            }
+        </script>
+    </body>
+</html>
